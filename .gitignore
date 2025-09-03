@@ -1,21 +1,123 @@
-# the composer package lock file and install directory
-# Commit your application's lock file http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file
-# You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file
-# /composer.lock
-/fuel/vendor
+<!doctype html>
+  <head>
+      <title>
+        Calculadora
+      </title>
+      <style>
+         *{background: beige;}
 
-# the fuelphp document
-/docs/
+        .tit{height: 108px;display: flex; justify-content:center; font-size: 100px; font-family:"brush script MT";}
+        .tit2{height: 59px;display: flex; justify-content:center; font-size: 15px; font-family:"comic sans MS";}
+        .tit3{height: 50px;display: flex; justify-content:center; font-size: 30px; font-family:"comic sans MS";}
+        .tit4{height: 50px;display: flex; justify-content:center; font-size: 30px; font-family:"comic sans MS";}
+        .a1{width: 15%;height: 7vh; display: flex; align-items: center; justify-content:center;background-color: #283618; border-radius:12px; color:#fefae0;}
+        .a2{width: 15%;height: 7vh; display: flex; align-items: center; justify-content:center;background-color: #283618; border-radius:12px; color:#fefae0; }
+        .a3{width: 15%;height: 7vh; display: flex; align-items: center; justify-content:center;background-color: #283618; border-radius:12px; color:#fefae0;}
+        .a4{width: 15%;height: 7vh; display: flex; align-items: center; justify-content:center;background-color: #283618; border-radius:12px; color:#fefae0;}
+        .a5{width: 15%;height: 7vh; display: flex; align-items: center; justify-content:center;background-color: #283618; border-radius:12px; color:#fefae0;}
+        .a6{width: 15%;height: 7vh; display: flex; align-items: center; justify-content:center;background-color: #283618; border-radius:12px; color:#fefae0;}
+        .a7{width: 15%;height: 7vh; display: flex; align-items: center; justify-content:center;background-color: #283618; border-radius:12px; color:#fefae0;}
+        .a8{width: 15%;height: 7vh; display: flex; align-items: center; justify-content:center;background-color: #283618; border-radius:12px; color:#fefae0;}
+        .a9{width: 15%;height: 7vh; display: flex; align-items: center; justify-content:center;background-color: #283618; border-radius:12px; color:#fefae0;}
+        .a10{width: 15%;height: 7vh; display: flex; align-items: center; justify-content:center;background-color: #283618; border-radius:12px; color:#fefae0;}
+        .a11{width: 15%;height: 7vh; display: flex; align-items: center; justify-content:center;background-color: #283618; border-radius:12px; color:#fefae0;}
+        .a12{width: 15%;height: 7vh; display: flex; align-items: center; justify-content:center;background-color: #283618; border-radius:12px; color:#fefae0;}
+        .a13{width: 15%;height: 7vh; display: flex; align-items: center; justify-content:center;background-color: #283618; border-radius:12px; color:#fefae0;}
+        .a14{width: 15%;height: 7vh; display: flex; align-items: center; justify-content:center;background-color: #283618; border-radius:12px; color:#fefae0;}
+        .a15{width: 15%;height: 7vh; display: flex; align-items: center; justify-content:center;background-color: #283618; border-radius:12px; color:#fefae0;}
 
-# you may install these packages with `oil package`.
-# http://fuelphp.com/docs/packages/oil/package.html
-# /fuel/packages/auth/
-# /fuel/packages/email/
-# /fuel/packages/oil/
-# /fuel/packages/orm/
-# /fuel/packages/parser/
+       </style>
+    </head> 
+     <body>
+      <center>
+        
+      <a class= "tit"> calculadora</a>
+      <a class= "tit2"> selecione uma operação: </a>
+      <a class= "tit3"> ╭───── • ⸙ • ─────╮ </a>
+      <input type="button" value="Área do quadrado" onclick='adq()' class='a1'>
+      <br>
+      <input type="button" value="Área do retângulo" onclick='adr()' class='a2'> 
+      <br>
+      <input type="button" value="Área do triângulo" onclick='adt()' class='a3'> 
+      <br>
+      <input type="button" value="Área do losango" onclick='adl()' class='a4'> 
+      <br>
+      <input type="button" value="Área do trapézio" onclick='adotrapezio()' class='a5'> 
+      <br>
+      <input type="button" value="Área do polígono regular" onclick='adopoligreg()' class='a6'> 
+      <br>
+      <input type="button" value="Área da esfera" onclick='aesfera()' class='a7'> 
+      <br>
+      <input type="button" value="Área do cone" onclick='adocone()' class='a8'> 
+      <br>
+      <input type="button" value="Área do círculo" onclick='adocirculo()' class='a9'> 
+      <br>
+      <input type="button" value="Volume do cubo" onclick='vcubo()' class='a10'> 
+      <br>
+      <input type="button" value="Volume do paralelepípedo" onclick='vparalelo()' class='a11'> 
+      <br>
+      <input type="button" value="Volume do cone" onclick='vescone()' class='a12'> 
+      <br>
+      <input type="button" value="Volume da esfera" onclick='vesfera()' class='a13'>  
+      <br>
+      <input type="button" value="Volume do cilindro" onclick='vcilindro()' class='a14'> 
+      <br>
+      <input type="button" value="Volume do prisma regular" onclick='vprisma()' class='a15'> 
+      <br>
+      <a class="tit4"> ╰────── • ⸙ • ──────╯ </a>
+    <script>
+      function adq(){
+        window.location = 'adq.php';
+        
+      }
+      function adr(){
+        window.location = 'adr.php';
+      }
+      function adt(){
+        window.location = 'adt.php';
+      }
+      function adl(){
+        window.location = 'adl.php';
+      }
+      function adotrapezio(){
+        window.location = 'adotrapezio.php';
+      }
+      function adopoligreg(){
+        window.location = 'adopoligreg.php';
+      }
+      function aesfera(){
+        window.location = 'aesfera.php';
+      }
+      function adocone(){
+        window.location = 'adocone.php';
+      }
+      function adocirculo(){
+        window.location = 'adocirculo.php';
+      }
+      function vcubo(){
+        window.location = 'vcubo.php';
+      }
+      function vparalelo(){
+        window.location = 'vparalelo.php';
+      }
+      function vescone(){
+        window.location = 'vescone.php';
+      }
+      function vesfera(){
+        window.location = 'vesfera.php';
+      }
+      function vcilindro(){
+        window.location = 'vcilindro.php';
+      }
+      function vprisma(){
+        window.location = 'vprisma.php';
+      }
+    </script>
 
-# dynamically generated files
+
+    </center>
+ </body>
+ </html>
 /fuel/app/logs/*/*/*
 /fuel/app/cache/*/*
 /fuel/app/config/crypt.php
